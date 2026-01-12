@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+    color: #1a1a1a;
+}
+.hero-section {
+    background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+    color: white;
+    padding: 120px 20px 80px;
+    text-align: center;
+}
+.hero-label {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #a0a0a0;
+}
+.hero-title {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+}
+.hero-description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #d0d0d0;
+}
+.projects-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+.project-card {
+    background: #0a0e13;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+.project-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+.project-info {
+    padding: 24px;
+    background: #0a0e13;
+}
+.project-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 12px;
+}
+.project-description {
+    font-size: 16px;
+    color: #a0a0a0;
+    line-height: 1.5;
+}
+@media (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 42px;
+    }
+    .hero-section {
+        padding: 80px 20px 60px;
+    }
+    .projects-container {
+        padding: 40px 20px;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
