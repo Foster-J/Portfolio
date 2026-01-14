@@ -1,5 +1,36 @@
-<%- include('templates/header', {title: 'Dashboard'})%>
+<%- include('templates/header', {title: 'Home - iamJarod'})%>
+
+<link rel="stylesheet" href="/css/home.css">
+
 <main>
-    
+    <main>
+    <section class="hero-section">
+        <div class="hero-container">
+            <!-- Profile Image -->
+            <div class="profile-image-wrapper">
+                <img src="/images/Profile_Picture.jpg" alt="Jarod" class="profile-image">
+            </div>
+            
+            <!-- Content -->
+            <div class="hero-content">
+                <h1 class="hero-title">Hello</h1>
+                <h2 class="hero-subtitle">A Bit About Me</h2>
+                <p class="hero-description">
+                    I'm a data analyst passionate about uncovering insights from complex datasets. 
+                    With expertise in statistical analysis, data visualization, and predictive modeling, 
+                    I transform raw data into strategic business intelligence. Let me help you make 
+                    data-driven decisions that drive real impact.
+                </p>
+                
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <a href="/resume" class="btn btn-resume">Resume</a>
+                    <a href="/projects" class="btn btn-projects">Projects</a>
+                    <a href="/contact" class="btn btn-contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 </main>
 <%- include('templates/footer')%>
