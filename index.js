@@ -20,6 +20,10 @@ app.get('/projects', (req,res) => {
     res.render('projects.ejs');
 });
 
+app.get('/contact', (req,res) => {
+    res.render('contact.ejs');
+});
+
 // 404 page
 app.use((req, res) => {
   res.status(404).render("404");
