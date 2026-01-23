@@ -90,31 +90,14 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-.btn-resume {
-    background-color: #FDB813;
-    color: #000000;
-}
-
-.btn-resume:hover {
-    background-color: #E5A711;
-}
-
 .btn-projects {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-.btn-projects:hover {
-    background-color: #E64747;
+    background-color: #000000 !important;
+    color: #ffffff !important;
 }
 
 .btn-contact {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-.btn-contact:hover {
-    background-color: #45C099;
+    background-color: #000000 !important;
+    color: #ffffff !important;
 }
 
 /* Responsive Design */
