@@ -50,21 +50,9 @@
     color: #bb86fc;
 }
 
-/* Active state - you can add this class dynamically */
+/* Active state */ 
 .nav-link.active {
     color: #bb86fc;
-}
-
-/* Underline effect on hover */
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #bb86fc;
-    transition: width 0.3s ease;
 }
 
 .nav-link:hover::after {
