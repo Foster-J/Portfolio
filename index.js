@@ -33,3 +33,5 @@ app.use((req, res) => {
 app.listen(port, () => {
   console.log(`Node application listening on port ${port}`);
 });
+
+module.exports = app;
