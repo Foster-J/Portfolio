@@ -4,9 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>
-    <%= title || "iamJarod" %>
-  </title>
+  <title>404 - Not Found</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/css/header.css">
@@ -15,23 +13,35 @@
 <body class="d-flex flex-column min-vh-100">
 <nav class="modern-navbar">
   <div class="nav-container">
-    <!-- Logo -->
-     <a href="/" class="nav-logo">
+    <a href="/" class="nav-logo">
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white">J</text>
       </svg>
     </a>
+    
     <div class="nav-links">
-      <a class = "nav-link" href="/">Home</a>
-      <a class = "nav-link" href="/about">About</a>
-      <a class = "nav-link" href="/projects">Projects</a>
-      <a class = "nav-link" href="/contact">Contact</a>
+      <a href="/" class="nav-link">HOME</a>
+      <a href="/about.html" class="nav-link">ABOUT</a>
+      <a href="/projects.html" class="nav-link">PROJECTS</a>
+      <a href="/contact.html" class="nav-link">CONTACT</a>
     </div>
-
-    <!-- LinkedIn Icon -->
+    
     <a href="https://www.linkedin.com/in/jarod-foster-32410526b/" target="_blank" class="nav-social" aria-label="LinkedIn">
       <i class="fab fa-linkedin"></i>
     </a>
   </div>
 </nav>
 
+<main class="container py-5">
+    <h1 class="h4">404 — Page not found</h1>
+    <p class="text-muted">The page you're looking for doesn't exist.</p>
+    <a class="btn btn-primary" href="/">Go Home</a>
+</main>
+
+<footer class="mt-auto py-4 bg-dark text-white text-center">
+  <p class="mb-0">&copy; 2026 Jarod Foster. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

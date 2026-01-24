@@ -1,38 +1,31 @@
-const ejs = require('ejs');
 const express = require('express');
-const app = express();
 const path = require('path');
-require('dotenv').config();
-
-// Set view engine
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
-app.use(express.urlencoded({ extended: false }));
-
-app.use(express.static('public'));
+const app = express();
 
 const port = process.env.PORT || 3000;
 
-app.get('/', (req,res) => {
-    res.render('index');
+app.use(express.static(__dirname));
+
+app.use(express.static('public'));
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/projects', (req,res) => {
-    res.render('projects');
+app.get('/projects', (req, res) => {
+    res.sendFile(path.join(__dirname, 'projects.html'));
 });
 
-app.get('/contact', (req,res) => {
-    res.render('contact');
+app.get('/contact', (req, res) => {
+    res.sendFile(path.join(__dirname, 'contact.html'));
 });
 
-// 404 page
 app.use((req, res) => {
-  res.status(404).render("404");
+    res.status(404).sendFile(path.join(__dirname, '404.html'));
 });
 
-// Start server
 app.listen(port, () => {
-  console.log(`Node application listening on port ${port}`);
+    console.log(`Server running at http://localhost:${port}`);
 });
 
 module.exports = app;
