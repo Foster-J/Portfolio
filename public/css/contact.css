@@ -113,70 +113,41 @@ body {
 
 /* Email Card - Gray/Silver */
 .card-email::before {
-    background: linear-gradient(135deg, #95A5A6 0%, #7F8C8D 100%);
+    background: #004182; 
 }
 
 .card-email .card-icon {
-    background: linear-gradient(135deg, #95A5A6 0%, #7F8C8D 100%);
+    background: #004182;
 }
 
 .card-email .card-link {
-    background: linear-gradient(135deg, #95A5A6 0%, #7F8C8D 100%);
-}
-
-.card-email .card-link:hover {
-    background: linear-gradient(135deg, #7F8C8D 0%, #6C7A7B 100%);
+    background: #004182;
 }
 
 /* LinkedIn Card - Orange */
 .card-linkedin::before {
-    background: linear-gradient(135deg, #E67E22 0%, #D35400 100%);
+    background: #0A66C2; 
 }
 
 .card-linkedin .card-icon {
-    background: linear-gradient(135deg, #E67E22 0%, #D35400 100%);
+    background: #0A66C2;
 }
 
 .card-linkedin .card-link {
-    background: linear-gradient(135deg, #E67E22 0%, #D35400 100%);
-}
-
-.card-linkedin .card-link:hover {
-    background: linear-gradient(135deg, #D35400 0%, #BA4A00 100%);
-}
-
-/* Twitter Card - Teal/Turquoise */
-.card-twitter::before {
-    background: linear-gradient(135deg, #1ABC9C 0%, #16A085 100%);
-}
-
-.card-twitter .card-icon {
-    background: linear-gradient(135deg, #1ABC9C 0%, #16A085 100%);
-}
-
-.card-twitter .card-link {
-    background: linear-gradient(135deg, #1ABC9C 0%, #16A085 100%);
-}
-
-.card-twitter .card-link:hover {
-    background: linear-gradient(135deg, #16A085 0%, #138D75 100%);
+    background: #0A66C2;
 }
 
 /* GitHub Card - Blue */
 .card-github::before {
-    background: linear-gradient(135deg, #3498DB 0%, #2980B9 100%);
+    background: black; 
 }
 
 .card-github .card-icon {
-    background: linear-gradient(135deg, #3498DB 0%, #2980B9 100%);
+    background: black; 
 }
 
 .card-github .card-link {
-    background: linear-gradient(135deg, #3498DB 0%, #2980B9 100%);
-}
-
-.card-github .card-link:hover {
-    background: linear-gradient(135deg, #2980B9 0%, #21618C 100%);
+    background: black; 
 }
 
 /* Responsive Design */
