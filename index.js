@@ -17,11 +17,11 @@ app.get('/', (req,res) => {
 });
 
 app.get('/projects', (req,res) => {
-    res.render('projects.ejs');
+    res.render('projects');
 });
 
 app.get('/contact', (req,res) => {
-    res.render('contact.ejs');
+    res.render('contact');
 });
 
 // 404 page
