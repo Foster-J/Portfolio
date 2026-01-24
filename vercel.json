@@ -1,4 +1,3 @@
-
 {
   "version": 2,
   "builds": [
@@ -20,5 +19,10 @@
       "src": "/(.*)",
       "dest": "index.js"
     }
-  ]
+  ],
+  "functions": {
+    "index.js": {
+      "includeFiles": "views/**"
+    }
+  }
 }
