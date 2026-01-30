@@ -9,6 +9,9 @@ body {
     background-color: #f5f5f5;
     color: #1a1a1a;
 }
+a {
+    text-decoration: none;
+}
 .hero-section {
     background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
     color: white;
