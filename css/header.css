@@ -25,15 +25,11 @@
     transition: transform 0.3s ease;
 }
 
-.nav-logo:hover {
-    transform: scale(1.05);
-}
-
 /* Navigation Links */
 .nav-links {
     display: flex;
     gap: 50px;
-    align-items: center;
+    align-items: right;
 }
 
 .nav-link {
@@ -65,10 +61,6 @@
     font-size: 20px;
     transition: color 0.3s ease;
     text-decoration: none;
-}
-
-.nav-social:hover {
-    color: #0077b5;
 }
 
 /* Responsive Design */
